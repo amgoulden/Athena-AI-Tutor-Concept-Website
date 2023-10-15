@@ -1,0 +1,128 @@
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', sans-serif;
+    padding: 8px;
+    margin: 0px 16px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 5%;
+}
+
+figcaption {
+    padding-top: 16px;
+}
+
+.box {
+    display: flex;
+    flex-basis: auto;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.feature:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.feature:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.feature:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+span.material-symbols-outlined {
+    font-size: 100px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+h1 {
+    font-size: 175%;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.feature {
+    max-width: 280px;
+    text-align: center;
+    margin: 2px 24px;
+    flex: 1 1 0px; 
+}
+
+#features-sect h2{
+    padding-bottom: 16px;
+}
+
+.feature p {
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.text {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+    letter-spacing: 10px;
+    animation: 
+        typing 2s steps(35),
+        cursor .4s step-end infinite alternate;
+  }
+  
+.container {
+    display: inline-block;
+}
+
+  @keyframes cursor {
+    50% {border-color: transparent} 
+  }
+  
+  @keyframes typing {
+    from {width: 0}
+  }
+
+  #about-us p{
+    text-align: left;
+    max-width: 75%;
+  }
+
+  a:link {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #131316;
+    background-color: #ffffff;
+    text-decoration: underline;
+  }
